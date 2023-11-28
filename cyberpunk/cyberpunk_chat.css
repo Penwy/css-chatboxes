@@ -1,0 +1,697 @@
+
+@-webkit-keyframes glitch-in {
+    0% {opacity: 0;}
+    3% {opacity: 0.5;}
+    6% {opacity: 0.3;}
+    9% {opacity: 0.8;}
+    12% {opacity: 0.5;}
+    15% {opacity: 1;}
+    30% {opacity: 1;}
+    33% {opacity: 0.3;}
+    36% {opacity: 0.8;}
+    39% {opacity: 0.3;}
+    42% {opacity: 0.8;}
+    45% {opacity: 0;}
+    54% {opacity: 0;}
+    57% {opacity: 1;}
+    75% {opacity: 1;}
+    78% {opacity: 0.8;}
+    81% {opacity: 1;}
+    84% {opacity: 0.6;}
+    87% {opacity: 1;}
+    90% {opacity: 0.3;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes xpbar {
+    0% {opacity: 0; width: 80px;}
+    40% {opacity: 0; width: 80px;}
+    40.5% {opacity: 1; width: 80px;}
+    41% {opacity: 0; width: 80px;}
+    45% {opacity: 0; width: 80px;}
+    45.5% {opacity: 1; width: 80px;}
+    46.5% {opacity: 1; width: 80px;}
+    47% {opacity: 0; width: 80px;}
+    48.5% {opacity: 0; width: 80px;}
+    49% {opacity: 1; width: 80px;}
+    52% {opacity: 1; width: 80px;}
+    52.5% {opacity: 0; width: 80px;}
+    53.5% {opacity: 0; width: 80px;}
+    54% {opacity: 1; width: 80px;}
+    56% {opacity: 1; width: 80px;}
+    56.5% {opacity: 0; width: 80px;}
+    57% {opacity: 1; width: 80px;}
+    100% {opacity: 1; width: 140px;}
+}
+
+@-webkit-keyframes xpbar1 {
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    40.5% {opacity: 1;}
+    41% {opacity: 0;}
+    45% {opacity: 0;}
+    45.5% {opacity: 1;}
+    46.5% {opacity: 1;}
+    47% {opacity: 0;}
+    48.5% {opacity: 0;}
+    49% {opacity: 1;}
+    52% {opacity: 1;}
+    52.5% {opacity: 0;}
+    53.5% {opacity: 0;}
+    54% {opacity: 1;}
+    56% {opacity: 1;}
+    56.5% {opacity: 0;}
+    57% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+#chat_box {
+ transform: perspective(20vw) translateZ(-1.2vw) rotateY(-1.5deg) !important;
+  padding: 0px 0px 0px 0px !important;
+  background-color: rgba(0,0,0,0) !important;
+    margin: 0px auto !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.chat_line[data-nick="Chat"] {
+    display: none !important  
+}
+
+.chat_line {
+  display: flex !important;
+  flex-flow: row wrap !important;
+  background: rgba(0,0,0,0) !important;
+  margin: 0px 0px 3px 0px !important;
+  line-height: 16px !important;
+    color: #fff !important;
+  padding: 0px 0px 0px 0px !important;
+    -webkit-animation-name: glitch-in !important;
+    -webkit-animation-iteration-count: 1 !important;
+    -webkit-animation-timing-function: ease-out !important;
+    -webkit-animation-duration: 0.7s !important;
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.chat_line .badges {
+    z-index:2 !important;
+  display: flex !important;
+    order:  -1 !important;
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+  background: transparent!important;
+  border: 0px !important;
+    position: absolute!important;
+    left: calc(100% - 44px) !important;
+    top: 6px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}
+
+.chat_line .badges .tag {
+    z-index:2 !important;
+    height: 0px !important;
+    width: 0px !important;
+    display: inline !important;
+    position: relative !important;
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+}
+
+.chat_line .badges::after{
+    z-index:999 !important;
+  content: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_none.png) !important;
+  top: 0px !important;
+  left: 0px !important;
+  position: relative !important;
+  display: inline !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+  background: transparent !important;
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.chat_line .badges [class^='broadcaster'], [class*=' broadcaster'] {
+    z-index:2 !important;
+    height: 0px !important;
+    width: 0px !important;
+    display: inline !important;
+    position: relative !important;
+    margin: 0px 100% 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+    border: solid transparent !important;
+    border-width:  0px 25px 25px 0px !important;
+    border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_int.png) !important;
+}
+
+.chat_line .badges [class^='subscriber'], [class*=' subscriber'] {
+    z-index:2 !important;
+    height: 0px !important;
+    width: 0px !important;
+    display: inline !important;
+    position: relative !important;
+    margin: 0px 100% 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+    border: solid transparent !important;
+    border-width:  0px 25px 25px 0px !important;
+    border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_reflex.png) !important;
+}
+
+.chat_line .badges [class^='vip'], [class*=' vip'] {
+    z-index:2 !important;
+    height: 0px !important;
+    width: 0px !important;
+    display: inline !important;
+    position: relative !important;
+    margin: 0px 100% 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+    border: solid transparent !important;
+    border-width:  0px 25px 25px 0px !important;
+    border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_tech.png) !important;
+}
+
+.chat_line .badges [class^='moderator'], [class*=' moderator'] {
+    z-index:2 !important;
+    height: 0px !important;
+    width: 0px !important;
+    display: inline !important;
+    position: relative !important;
+    margin: 0px 100% 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+    border: solid transparent !important;
+    border-width:  0px 25px 25px 0px !important;
+    border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_body.png) !important;
+}
+
+.chat_line .badges [class^='artist-badge'], [class*=' artist-badge'] {
+    order:  -1 !important;
+    z-index:2 !important;
+    height: 0px !important;
+    width: 0px !important;
+    display: inline !important;
+    position: relative !important;
+    margin: 0px 100% 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+    border: solid transparent !important;
+    border-width:  0px 25px 25px 0px !important;
+    border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_cool.png) !important;
+}
+
+.chat_line[data-timestamp$="1"] .badges::before{
+    z-index:-999 !important;
+  content: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_badge_back_1.webp) !important;
+  top: 1px !important;
+  left: 2px !important;
+  position: absolute !important;
+  display: inline !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+  background: transparent !important;
+  height: 23px !important;
+  width: 21px !important;
+}
+
+.chat_line[data-timestamp$="2"] .badges::before{
+    z-index:-999 !important;
+  content: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_badge_back_2.webp) !important;
+  top: 1px !important;
+  left: 2px !important;
+  position: absolute !important;
+  display: inline !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+  background: transparent !important;
+  height: 23px !important;
+  width: 21px !important;
+}
+
+.chat_line[data-timestamp$="3"] .badges::before{
+    z-index:-999 !important;
+  content: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_badge_back_3.webp) !important;
+  top: 1px !important;
+  left: 2px !important;
+  position: absolute !important;
+  display: inline !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+  background: transparent !important;
+  height: 23px !important;
+  width: 21px !important;
+}
+
+.chat_line[data-timestamp$="4"] .badges::before{
+    z-index:-999 !important;
+  content: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_badge_back_4.webp) !important;
+  top: 1px !important;
+  left: 2px !important;
+  position: absolute !important;
+  display: inline !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+  background: transparent !important;
+  height: 23px !important;
+  width: 21px !important;
+}
+
+.chat_line[data-timestamp$="5"] .badges::before{
+    z-index:-999 !important;
+  content: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_badge_back_5.webp) !important;
+  top: 1px !important;
+  left: 2px !important;
+  position: absolute !important;
+  display: inline !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+  background: transparent !important;
+  height: 23px !important;
+  width: 21px !important;
+}
+
+.chat_line[data-timestamp$="6"] .badges::before{
+    z-index:-999 !important;
+  content: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_badge_back_6.webp) !important;
+  top: 1px !important;
+  left: 2px !important;
+  position: absolute !important;
+  display: inline !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+  background: transparent !important;
+  height: 23px !important;
+  width: 21px !important;
+}
+
+.chat_line[data-timestamp$="7"] .badges::before{
+    z-index:-999 !important;
+  content: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_badge_back_7.webp) !important;
+  top: 1px !important;
+  left: 2px !important;
+  position: absolute !important;
+  display: inline !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+  background: transparent !important;
+  height: 23px !important;
+  width: 21px !important;
+}
+
+.chat_line[data-timestamp$="8"] .badges::before{
+    z-index:-999 !important;
+  content: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_badge_back_8.webp) !important;
+  top: 1px !important;
+  left: 2px !important;
+  position: absolute !important;
+  display: inline !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+  background: transparent !important;
+  height: 23px !important;
+  width: 21px !important;
+}
+
+.chat_line[data-timestamp$="9"] .badges::before{
+    z-index:-999 !important;
+  content: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_badge_back_9.webp) !important;
+  top: 1px !important;
+  left: 2px !important;
+  position: absolute !important;
+  display: inline !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+  background: transparent !important;
+  height: 23px !important;
+  width: 21px !important;
+}
+
+.chat_line[data-timestamp$="0"] .badges::before{
+    z-index:-999 !important;
+  content: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_badge_back_0.webp) !important;
+  top: 1px !important;
+  left: 2px !important;
+  position: absolute !important;
+  display: inline !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+  background: transparent !important;
+  height: 23px !important;
+  width: 21px !important;
+}
+
+.chat_line .colon {
+    -webkit-animation-name: xpbar1 !important;
+    -webkit-animation-iteration-count: 1 !important;
+    -webkit-animation-timing-function: ease-out !important;
+    -webkit-animation-duration: 3.0s !important;
+  display: inline !important;
+  position: absolute !important;
+  color: #00000000 !important;
+  height: 7px !important;
+  width: 230px !important;;
+  top: 32px !important;
+  left: 20px !important;
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_xpbar_back.png) !important;
+}
+
+.chat_line .colon::before {
+    -webkit-animation-name: xpbar !important;
+    -webkit-animation-iteration-count: 1 !important;
+    -webkit-animation-timing-function: ease-out !important;
+    -webkit-animation-duration: 3.0s !important;
+  content: '' !important;
+  position: absolute !important;
+  top: 2px !important;
+  left: 0px !important;
+  height: 3px !important;
+  width: 140px;
+  background: #71007d !important;
+}
+
+.chat_line .colon::after {
+  z-index:  !important;
+  content: '' !important;
+  position: absolute !important;
+  top: 0px !important;
+  left: 0px !important;
+  height: 7px !important;
+  width: 230px !important;
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_xpbar_front.png) !important;
+}
+
+.chat_line .nick {
+  text-shadow:
+         0px -1px 5px #057005,
+         0px -1px 5px #057005,
+        -1px  0px 5px #057005,
+         1px  0px 5px #057005,
+        -1px -1px 5px #057005,
+         1px -1px 5px #057005,
+        -1px  1px 5px #057005,
+         1px  1px 5px #057005,
+         0px -1px 10px #0de20c8f,
+         0px -1px 10px #0de20c8f,
+        -1px  0px 10px #0de20c8f,
+         1px  0px 10px #0de20c8f,
+        -1px -1px 10px #0de20c8f,
+         1px -1px 10px #0de20c8f,
+        -1px  1px 10px #0de20c8f,
+         1px  1px 10px #0de20c8f !important;
+  order:  -2 !important;
+  z-index: 100 !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 10px 0px 10px !important;
+    color: #0de20c !important;
+  background: transparent !important;
+  line-height: 35px !important;
+  height: 37px !important;
+  display: inline !important;
+    font-family: Rajdhani Medium !important;
+    font-size: 22px !important;
+    letter-spacing: 0px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.chat_line .message {
+  z-index:0 !important;
+  order:  0 !important;
+    color: #0de20c !important;
+  width: 100% !important;
+  background: transparent !important;
+  background-clip: padding-box !important;
+  padding:   3px 10px 35px 5px  !important;
+    margin: 0px 0px 0px 0px !important;
+    line-height:  17px !important;
+    font-family: Rajdhani Medium !important;
+    font-size: 19px !important;
+    letter-spacing: 0px !important;
+  border: solid transparent!important;
+  border-width:2px!important;
+}
+
+.chat_line .message::before{
+  z-index: -50 !important;
+  content: '';
+  position: absolute !important;
+  width:calc(100% - 146px) !important;
+  height:calc(100% - 74px) !important;
+  top: 0px !important;
+  left: 0px !important;
+  border: solid transparent !important;
+  border-width:   38px 55px 36px 83px  !important;
+  border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background.png) 38 55 36 83 repeat  !important;
+  border-image-slice: 38 55 36 83  fill !important;
+}
+
+.chat_line[data-timestamp$="0"]::after{
+  -webkit-mask-image : url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_mask.png) !important;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right top;
+  z-index: -90 !important;
+  content: '';
+  position: absolute !important;
+  width:calc(100% - 11px) !important;
+  height:calc(100% - 30px) !important;
+    background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_pcb.png), url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_wipe_0.webp) !important;
+  top: 0px !important;
+  left: 3px !important;
+}
+
+.chat_line[data-timestamp$="1"]::after{
+  -webkit-mask-image : url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_mask.png) !important;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right top;
+  z-index: -90 !important;
+  content: '';
+  position: absolute !important;
+  width:calc(100% - 11px) !important;
+  height:calc(100% - 30px) !important;
+    background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_pcb.png), url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_wipe_1.webp) !important;
+  top: 0px !important;
+  left: 3px !important;
+}
+
+.chat_line[data-timestamp$="2"]::after{
+  -webkit-mask-image : url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_mask.png) !important;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right top;
+  z-index: -90 !important;
+  content: '';
+  position: absolute !important;
+  width:calc(100% - 11px) !important;
+  height:calc(100% - 30px) !important;
+    background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_pcb.png), url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_wipe_2.webp) !important;
+  top: 0px !important;
+  left: 3px !important;
+}
+
+.chat_line[data-timestamp$="3"]::after{
+  -webkit-mask-image : url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_mask.png) !important;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right top;
+  z-index: -90 !important;
+  content: '';
+  position: absolute !important;
+  width:calc(100% - 11px) !important;
+  height:calc(100% - 30px) !important;
+    background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_pcb.png), url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_wipe_3.webp) !important;
+  top: 0px !important;
+  left: 3px !important;
+}
+
+.chat_line[data-timestamp$="4"]::after{
+  -webkit-mask-image : url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_mask.png) !important;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right top;
+  z-index: -90 !important;
+  content: '';
+  position: absolute !important;
+  width:calc(100% - 11px) !important;
+  height:calc(100% - 30px) !important;
+    background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_pcb.png), url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_wipe_4.webp) !important;
+  top: 0px !important;
+  left: 3px !important;
+}
+
+.chat_line[data-timestamp$="5"]::after{
+  -webkit-mask-image : url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_mask.png) !important;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right top;
+  z-index: -90 !important;
+  content: '';
+  position: absolute !important;
+  width:calc(100% - 11px) !important;
+  height:calc(100% - 30px) !important;
+    background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_pcb.png), url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_wipe_5.webp) !important;
+  top: 0px !important;
+  left: 3px !important;
+}
+
+.chat_line[data-timestamp$="6"]::after{
+  -webkit-mask-image : url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_mask.png) !important;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right top;
+  z-index: -90 !important;
+  content: '';
+  position: absolute !important;
+  width:calc(100% - 11px) !important;
+  height:calc(100% - 30px) !important;
+    background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_pcb.png), url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_wipe_6.webp) !important;
+  top: 0px !important;
+  left: 3px !important;
+}
+
+.chat_line[data-timestamp$="7"]::after{
+  -webkit-mask-image : url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_mask.png) !important;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right top;
+  z-index: -90 !important;
+  content: '';
+  position: absolute !important;
+  width:calc(100% - 11px) !important;
+  height:calc(100% - 30px) !important;
+    background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_pcb.png), url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_wipe_7.webp) !important;
+  top: 0px !important;
+  left: 3px !important;
+}
+
+.chat_line[data-timestamp$="8"]::after{
+  -webkit-mask-image : url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_mask.png) !important;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right top;
+  z-index: -90 !important;
+  content: '';
+  position: absolute !important;
+  width:calc(100% - 11px) !important;
+  height:calc(100% - 30px) !important;
+    background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_pcb.png), url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_wipe_8.webp) !important;
+  top: 0px !important;
+  left: 3px !important;
+}
+
+.chat_line[data-timestamp$="9"]::after{
+  -webkit-mask-image : url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_mask.png) !important;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right top;
+  z-index: -90 !important;
+  content: '';
+  position: absolute !important;
+  width:calc(100% - 11px) !important;
+  height:calc(100% - 25px) !important;
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_pcb.png), url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_wipe_9.webp) !important;
+  top: 0px !important;
+  left: 3px !important;
+}
+
+.chat_line::before{
+  -webkit-mask-image : url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_background_mask.png) !important;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: right top;
+  z-index: -100 !important;
+  content: '';
+  position: absolute !important;
+  width:calc(100% - 11px) !important;
+  height:calc(100% - 25px) !important;
+  top: 0px !important;
+  left: 3px !important;
+  background: #18001afa !important;
+  border: solid transparent !important;
+  border-width: 0px !important;
+}
+
+.chat_line .message::after{
+  text-shadow:
+         0px -1px 5px #e600ff3f,
+         0px -1px 5px #e600ff3f,
+        -1px  0px 5px #e600ff3f,
+         1px  0px 5px #e600ff3f,
+        -1px -1px 5px #e600ff3f,
+         1px -1px 5px #e600ff3f,
+        -1px  1px 5px #e600ff3f,
+         1px  1px 5px #e600ff3f  !important;
+  z-index: -50 !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 5px 0px 0px 80px !important;
+    color: #c403d9 !important;
+    font-family: Rajdhani Medium !important;
+    font-size: 17px !important;
+  position: absolute !important;
+  bottom: 9px !important;
+  left: 7px !important;
+}
+
+.chat_line[data-nick="kyoslilmonster"] .message::after{
+  content: 'General cat behaviour';
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
+}
+
+.chat_line[data-nick="shibbuu"] .message::after{
+  content: 'Catboy entrapment';
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
+}
+
+.chat_line[data-nick="enbycatboygf"] .message::after{
+  content: 'Penis bone enjoyment';
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
+}
+
+.chat_line[data-nick="pitchermoe"] .message::after{
+  content: 'Sports crimes';
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
+}
+
+.chat_line[data-nick="krisiries"] .message::after{
+  content: 'Unregulated crabs pantsing';
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
+}
+
+.chat_line[data-nick="willow"] .message::after{
+  content: 'Premeditated egg cracking';
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
+}
+
+.chat_line[data-nick="yamainumakoto"] .message::after{
+  content: 'Aggravated cuteness';
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
+}
+
+.chat_line[data-nick="foudd"] .message::after{
+  content: 'Peach ring smuggling';
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
+}
+
+.chat_line[data-nick="quinn_carter"] .message::after{
+  content: 'Mouseboy trafficking';
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
+}
+
+.chat_line[data-nick="yuriko_onna"] .message::after{
+  content: 'Blåhaj poaching';
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
+}
+
+.chat_line[data-nick="dancle16"] .message::after{
+  content: 'Boismell and use of boismell';
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
+}
+
+.chat_line[data-nick="goddessreanne"] .message::after{
+  content: 'Bongo violations';
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
+}
+
+.chat_line[data-nick="traditionology"] .message::after{
+  content: 'Unlawful Saturn collection';
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
+}
+
+.chat_line[data-nick=""] .message::after{
+  content: '';
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
+}
