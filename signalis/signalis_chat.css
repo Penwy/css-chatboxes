@@ -14,7 +14,6 @@
 #chat_box {
   background-color: rgba(0,0,0,0) !important;
     margin: 0px auto;
-    width: 100% !important;
 }
 
 .chat_line[data-nick="Chat"] {
