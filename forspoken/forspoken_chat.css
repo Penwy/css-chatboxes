@@ -1,0 +1,259 @@
+@-webkit-keyframes dropheader {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+#chat_box  {
+  background-color: rgba(0,0,0,0) !important;
+    margin: 0px auto !important;
+    width: 100% !important;
+}
+
+.chat_line[data-nick="Chat"] {
+    display: none !important
+}
+
+.chat_line {
+  display: flex !important;
+  flex-flow: row wrap !important;
+  background: rgba(0,0,0,0) !important;
+  margin: 0px 0px 0px 0px !important;
+  line-height: 16px !important;
+    color: #fff !important;
+  padding: 0px 0px 0px 0px !important;
+    -webkit-animation-name: dropheader !important;
+    -webkit-animation-iteration-count: 1 !important;
+    -webkit-animation-timing-function: ease-out !important;
+    -webkit-animation-duration: 0.2s !important;
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.chat_line .badges {
+  display: flex !important;
+    order:  -1 !important;
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+  background: transparent!important;
+  border: 0px !important;
+    position: absolute!important;
+    left: 0px !important;
+    top: 2px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}
+
+
+.chat_line .badges .tag {
+    z-index:2 !important;
+    height: 0px !important;
+    width: 0px !important;
+    display: inline !important;
+    position: relative !important;
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+}
+
+.chat_line .badges::after{
+    z-index:999 !important;
+  content:url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/forspoken/assets/forspoken_basic.png) !important;
+  top: 0px !important;
+  left: 0px !important;
+  position: relative !important;
+  display: inline !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+  background: transparent !important;
+  height: 46px !important;
+  width: 286px !important;
+}
+
+.chat_line .badges [class^='broadcaster'], [class*=' broadcaster'] {
+    z-index:2 !important;
+    height: 0px !important;
+    width: 0px !important;
+    display: inline !important;
+    position: relative !important;
+    margin: 0px 100% 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+    border: solid transparent !important;
+    border-width:  0px 286px 46px 0px !important;
+    border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/forspoken/assets/forspoken_kyo.png) !important;
+}
+
+.chat_line .badges [class^='subscriber'], [class*=' subscriber'] {
+    z-index:2 !important;
+    height: 0px !important;
+    width: 0px !important;
+    display: inline !important;
+    position: relative !important;
+    margin: 0px 100% 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+    border: solid transparent !important;
+    border-width:  0px 286px 46px 0px !important;
+    border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/forspoken/assets/forspoken_sub.png) !important;
+}
+
+.chat_line .badges [class^='vip'], [class*=' vip'] {
+    z-index:2 !important;
+    height: 0px !important;
+    width: 0px !important;
+    display: inline !important;
+    position: relative !important;
+    margin: 0px 100% 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+    border: solid transparent !important;
+    border-width:  0px 286px 46px 0px !important;
+    border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/forspoken/assets/forspoken_vip.png) !important;
+}
+
+.chat_line .badges [class^='moderator'], [class*=' moderator'] {
+    z-index:2 !important;
+    height: 0px !important;
+    width: 0px !important;
+    display: inline !important;
+    position: relative !important;
+    margin: 0px 100% 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+    border: solid transparent !important;
+    border-width:  0px 286px 46px 0px !important;
+    border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/forspoken/assets/forspoken_mod.png) !important;
+}
+
+.chat_line .badges [class^='artist-badge'], [class*=' artist-badge'] {
+    order:  -1 !important;
+    z-index:2 !important;
+    height: 0px !important;
+    width: 0px !important;
+    display: inline !important;
+    position: relative !important;
+    margin: 0px 100% 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+    border: solid transparent !important;
+    border-width:  0px 286px 46px 0px !important;
+    border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/forspoken/assets/forspoken_artist.png) !important;
+}
+
+
+.chat_line .nick {
+  text-shadow:
+         0px -1px 5px black,
+         0px -1px 5px black,
+        -1px  0px 5px black,
+         1px  0px 5px black,
+        -1px -1px 5px black,
+         1px -1px 5px black,
+        -1px  1px 5px black,
+         1px  1px 5px black,
+         0px -1px 0px black,
+         0px -1px 0px black,
+        -1px  0px 0px black,
+         1px  0px 0px black,
+        -1px -1px 0px black,
+         1px -1px 0px black,
+        -1px  1px 0px black,
+         1px  1px 0px black !important;
+  order:  -2 !important;
+  z-index: 100 !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 3px 10px 0px 39px !important;
+    color: #cfb53b !important;
+  background: transparent !important;
+  line-height: 25px !important;
+  height: 25px !important;
+  display: inline !important;
+    font-family: Metropolis Light  !important;
+    font-size: 22px !important;
+    letter-spacing: 0px !important;
+  font-weight: 300 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+
+.chat_line .colon::before{
+  content:'' !important;
+  z-index: -990 !important;
+  top: 0px !important;
+  left: 0px !important;
+  position: absolute !important;
+  display: inline !important;
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 30px !important;
+    color: #cfb53b !important;
+  background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/forspoken/assets/forspoken_nick_background.png) no-repeat !important;
+  line-height: 25px !important;
+  height: 25px !important;
+  width: 100% !important;
+  display: inline !important;
+}
+
+.chat_line .colon {
+    height: 0px !important;
+    width: 0px !important;
+  order:  -3 !important;
+  display: inline !important;
+  background: transparent !important;
+  color: transparent !important;
+}
+
+
+.chat_line .message::before{
+  z-index: -100 !important;
+  content: '';
+  position: absolute !important;
+  width:calc(100% - 218px) !important;
+  height:calc(100% - 36px) !important;
+  top: 25px !important;
+  left: 0px !important;
+  border: solid transparent !important;
+  border-width:   2px 121px 9px 97px  !important;
+  border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/forspoken/assets/forspoken_text_background.png) 2 121 9 97 repeat  !important;
+  border-image-slice: 2 121 9 97 fill !important;
+}
+
+
+.chat_line .message {
+  z-index: 100 !important;
+  text-shadow:
+         0px -1px 5px black,
+         0px -1px 5px black,
+        -1px  0px 5px black,
+         1px  0px 5px black,
+        -1px -1px 5px black,
+         1px -1px 5px black,
+        -1px  1px 5px black,
+         1px  1px 5px black,
+         0px -1px 0px black,
+         0px -1px 0px black,
+        -1px  0px 0px black,
+         1px  0px 0px black,
+        -1px -1px 0px black,
+         1px -1px 0px black,
+        -1px  1px 0px black,
+         1px  1px 0px black !important;
+  z-index:0 !important;
+  order:  0 !important;
+    color: #cfb53b !important;
+  width: 100% !important;
+  background: transparent !important;
+  background-clip: padding-box !important;
+  padding:   0px 0px 0px 42px  !important;
+    margin: 2px 0px 0px 0px !important;
+    line-height:  18px !important;
+    font-family: Metropolis Light  !important;
+    font-size: 18px !important;
+    letter-spacing: 0px !important;
+  font-weight: 200 !important;
+  border: solid transparent!important;
+  border-width:2px!important;
+}
