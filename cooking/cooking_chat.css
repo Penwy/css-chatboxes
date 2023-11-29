@@ -1,0 +1,120 @@
+@-webkit-keyframes dropheader {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+#chat_box {
+  background-color: rgba(0,0,0,0) !important;
+    margin: 0px auto;
+}
+
+.chat_line[data-nick="Chat"] {
+    display: none !important
+}
+
+.chat_line {
+  display: flex !important;
+  flex-flow: row wrap !important;
+  background: rgba(0,0,0,0) !important;
+  margin: 0px 0px 0px 0px !important;
+    color: #fff !important;
+  padding: 0px 0px 0px 0px !important;
+    margin-bottom: 5px !important;
+    margin-left: 0px !important;
+    -webkit-animation-name: dropheader;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 0.2s;
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.chat_line .badges {
+    position: absolute;
+    right: 0px;
+    display: inline !important;
+}
+
+
+.chat_line .tag {
+    height: 25px;
+    width: 25px;
+    display: inline !important;
+    vertical-align: initial !important;
+    word-wrap: break-word !important;
+}
+
+.chat_line .nick {
+    text-shadow:
+         0px -1px 5px #d924aa,
+         0px -1px 5px #d924aa,
+        -1px  0px 5px #d924aa,
+         1px  0px 5px #d924aa,
+        -1px -1px 5px #d924aa,
+         1px -1px 5px #d924aa,
+        -1px  1px 5px #d924aa,
+         1px  1px 5px #d924aa,
+         0px -1px 0px #d924aa,
+         0px -1px 0px #d924aa,
+        -1px  0px 0px #d924aa,
+         1px  0px 0px #d924aa,
+        -1px -1px 0px #d924aa,
+         1px -1px 0px #d924aa,
+        -1px  1px 0px #d924aa,
+         1px  1px 0px #d924aa !important;
+    color: white !important;
+  margin: 10px 0px 5px 0px !important;
+  padding: 0px 5px 0px 5px !important;
+  order:  -1 !important;
+  display: inline !important;
+    font-family: BeautySchoolDropout ;
+    font-size: 30px !important;
+    letter-spacing: 2px;
+  font-weight: 100;
+    word-wrap: break-word !important;
+}
+
+.chat_line .colon {
+  display: none !important;
+}
+
+.chat_line .message {
+    text-shadow:
+         0px -1px 5px #d288ee,
+         0px -1px 5px #d288ee,
+        -1px  0px 5px #d288ee,
+         1px  0px 5px #d288ee,
+        -1px -1px 5px #d288ee,
+         1px -1px 5px #d288ee,
+        -1px  1px 5px #d288ee,
+         1px  1px 5px #d288ee,
+         0px -1px 0px #9a3fc0,
+         0px -1px 0px #9a3fc0,
+        -1px  0px 0px #9a3fc0,
+         1px  0px 0px #9a3fc0,
+        -1px -1px 0px #9a3fc0,
+         1px -1px 0px #9a3fc0,
+        -1px  1px 0px #9a3fc0,
+         1px  1px 0px #9a3fc0 !important;
+    color: white !important;
+  width: 100% !important;
+  background: rgba(0,0,0,0) !important;
+  padding: 3px !important;
+    margin: 0px !important;
+    line-height:  1.05;
+    font-family: Poiret One ;
+    font-size: 25px;
+    letter-spacing: 1px;
+  font-weight: 100;
+  border: 10px solid transparent !important;
+  border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cooking/assets/border.png) repeat !important;
+  border-image-slice: 49% fill !important;
+}
