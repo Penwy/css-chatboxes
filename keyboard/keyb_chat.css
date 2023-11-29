@@ -1,0 +1,104 @@
+@-webkit-keyframes dropheader {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+body {background-color: rgba(80,80,80)}
+
+#chat_box {
+  background-color: rgba(0,0,0,0) !important;
+    margin: 0px auto;
+    width: 100% !important;
+}
+
+.chat_line[data-nick="Chat"] {
+    display: none !important
+}
+
+.chat_line {
+  display: flex !important;
+  justify-content: space-between !important;
+  flex-flow: row wrap !important;
+  background: rgba(0,0,0,0) !important;
+  margin: -25px 0px 0px 0px !important;
+  line-height: 16px !important;
+    color: #fff !important;
+  padding: 0px 0px 0px 0px !important;
+    -webkit-animation-name: dropheader !important;
+    -webkit-animation-iteration-count: 1 !important;
+    -webkit-animation-timing-function: ease-out !important;
+    -webkit-animation-duration: 0.2s !important;
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.chat_line .badges {
+    height: 20px !important;
+    order:  0 !important;
+    display: inline !important;
+  background: rgb(0,0,0) !important;
+  background-clip: padding-box !important;
+  border: 8px solid transparent !important;
+  border-image-slice: 8 fill !important;
+  border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/keyboard/assets/keyb_tag_border.png) 8 repeat  !important;
+}
+
+
+.chat_line .badges .tag {
+  display: inline !important;
+    height: 20px !important;
+    width: 20px !important;
+  padding: 0px 0px 0px 0px !important;
+    vertical-align: text-bottom !important;
+    word-wrap: break-word !important;
+}
+
+.chat_line .nick {
+  margin: 0px 0px 0px 0px !important;
+  padding: 2px 2px 2px 2px !important;
+  background: rgb(0,0,0) !important;
+  background-clip: padding-box !important;
+  order:  -2 !important;
+  display: inline !important;
+    font-family: Xirod  !important;
+    font-size: 14px !important;
+    letter-spacing: 0px !important;
+  font-weight: 300 !important;
+    word-wrap: break-word !important;
+  border: 5px solid transparent !important;
+  border-image-slice: 5 fill !important;
+  border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/keyboard/assets/keyb_nick_border.png) 5 repeat  !important;
+}
+
+.chat_line .colon {
+  order:  -3 !important;
+  display: inline !important;
+  background: transparent !important;
+  color: transparent !important;
+}
+
+.chat_line .message {
+  order:  -1 !important;
+    color: white !important;
+  width: 100% !important;
+  background: rgb(0,0,0) !important;
+  background-clip: padding-box !important;
+  padding: 0px !important;
+    margin: 0px !important;
+    line-height:  1.0 !important;
+    font-family: Aldrich  !important;
+    font-size: 17px !important;
+    letter-spacing: 0px !important;
+  font-weight: 200 !important;
+  border: 25px solid transparent !important;
+  border-image-slice: 25 fill !important;
+  border-image: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/keyboard/assets/keyb_text_border.png) 25 repeat  !important;
+}
