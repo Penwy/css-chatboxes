@@ -2,7 +2,7 @@
 
 This is a cyberpunk-themed chat, originally made for Kyoslilmonster
 
-![Showcase](https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/demo.mp4)
+https://github.com/Penwy/css-chatboxes/assets/37129613/8d88f54d-a038-4691-8b0a-fd55f73fac64
 
 It also allows showing a custom "Wanted for" message for specific users, the template at the end of the .css allows adding users :
 ```css
