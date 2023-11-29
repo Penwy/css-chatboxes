@@ -1,0 +1,104 @@
+@-webkit-keyframes dropheader {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+
+#chat_box  {
+  background-color: rgba(0,0,0,0) !important;
+    margin: 0px auto !important;
+    width: 100% !important;
+}
+
+.chat_line[data-nick="Chat"] {
+    display: none !important
+}
+
+.chat_line {
+  display: flex !important;
+  flex-flow: row wrap !important;
+  background: linear-gradient(0deg, rgba(0,0,0,1.0), rgba(0,0,0,0) 25px, rgba(0,0,0,0) calc(100% - 25px), rgba(0,0,0,1.0)),
+  linear-gradient(90deg, rgba(0,0,0,1.0), rgba(0,0,0,0) 70px, rgba(0,0,0,0) calc(100% - 70px), rgba(0,0,0,1.0)),
+  url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/fallout/assets/pip-background.png) !important;
+  margin: 0px 0px 3px 0px !important;
+  border-radius: 15px !important;
+  padding: 15px!important;
+    -webkit-animation-name: dropheader !important;
+    -webkit-animation-iteration-count: 1 !important;
+    -webkit-animation-timing-function: ease-out !important;
+    -webkit-animation-duration: 0.2s !important;
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.chat_line .badges {
+    position: absolute;
+    right: 0px;
+    display : inline !important;
+    order:  0 !important;
+    display: inline !important;
+  line-height: 25px !important;
+  background: rgb(0,0,0,0) !important;
+  background-clip: padding-box !important;
+  border: 0px solid transparent !important;
+}
+
+
+
+.chat_line  .badges .tag {
+    filter: brightness(70%) sepia(100%) hue-rotate(75deg) saturate(300%) !important;
+    height: 25px !important;
+    width: 25px !important;
+  padding: 0px 0px 0px 0px !important;
+    display: inline !important;
+    vertical-align: text-bottom !important;
+    word-wrap: break-word !important;
+}
+
+.chat_line .nick {
+  margin: 0px 0px 5px 0px !important;
+  padding: 0px 1px 2px 1px !important;
+  color: rgba(0,0,0,1) !important;
+  background: rgba(0,255,0,1) !important;
+  line-height: 1 !important;
+  border-radius: 3px !important;
+  order:  -1 !important;
+  display: inline !important;
+    font-family: Overseer  !important;
+    font-size: 25px !important;
+    letter-spacing: 0px !important;
+  font-weight: 200 !important;
+    word-wrap: break-word !important;
+  border: 0px solid transparent !important;
+}
+
+.chat_line .colon {
+  display: none !important;
+  background: transparent !important;
+  color: transparent !important;
+}
+
+.chat_line .message {
+  filter: brightness(70%) sepia(100%) hue-rotate(75deg) saturate(300%) !important;
+  order:  1 !important;
+    color: rgba(255,255,255,1) !important;
+  width: 100% !important;
+  background: rgb(0,0,0,0) !important;
+  background-clip: padding-box !important;
+  padding: 0px !important;
+    margin: 0px !important;
+    line-height:  1.0 !important;
+    font-family: Monofonto  !important;
+    font-size: 17px !important;
+    letter-spacing: 0px !important;
+  font-weight: 100 !important;
+  border: 0px solid transparent !important;
+}
