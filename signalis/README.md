@@ -1,4 +1,4 @@
-## Cooking chat
+## Signalis chat
 
 This is a Signalis-themed chat, originally made for Kyoslilmonsters.
 
