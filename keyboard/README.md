@@ -1,4 +1,4 @@
-## Cooking chat
+## Keyboard chat
 
 This chat was originally made for Kyoslilmonster, for his keyboard-building streams.
 
