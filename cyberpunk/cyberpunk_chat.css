@@ -607,14 +607,14 @@
 
 .chat_line .message::after{
   text-shadow:
-         0px -1px 5px #e600ff3f,
-         0px -1px 5px #e600ff3f,
-        -1px  0px 5px #e600ff3f,
-         1px  0px 5px #e600ff3f,
-        -1px -1px 5px #e600ff3f,
-         1px -1px 5px #e600ff3f,
-        -1px  1px 5px #e600ff3f,
-         1px  1px 5px #e600ff3f  !important;
+         0px -1px 5px #c600df3f,
+         0px -1px 5px #c600df3f,
+        -1px  0px 5px #c600df3f,
+         1px  0px 5px #c600df3f,
+        -1px -1px 5px #c600df3f,
+         1px -1px 5px #c600df3f,
+        -1px  1px 5px #c600df3f,
+         1px  1px 5px #c600df3f  !important;
   z-index: -50 !important;
   margin: 0px 0px 0px 0px !important;
   padding: 5px 0px 0px 80px !important;
@@ -641,7 +641,7 @@
   background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
 }
 
-.chat_line[data-nick="pitchermoe"] .message::after{
+.chat_line[data-nick="pitchermoe13"] .message::after{
   content: 'Sports crimes';
   background: url(https://raw.githubusercontent.com/Penwy/css-chatboxes/main/cyberpunk/assets/cyberpunk_wanted_for.png) no-repeat !important;
 }
