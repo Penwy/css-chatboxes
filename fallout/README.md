@@ -1,4 +1,4 @@
-## Cooking chat
+## Fallout chat
 
 This is a Fallout-themed chat, originally made for Kyoslilmonster.
 
